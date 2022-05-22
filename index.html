@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category-page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/header-css/lg-header.css" />
+    <link rel="stylesheet" href="./styles/main-css/lg-screen-main.css" />
+    <link rel="stylesheet" href="./styles/header-css/m-screen-header.css" />
+    <link rel="stylesheet" href="./styles/main-css/m-screen-main.css" />
+    <link rel="stylesheet" href="./styles/main-css/sm-screen-main.css" />
+    <link rel="stylesheet" href="./styles/main-css/s-screen-main.css" />
+    <link rel="stylesheet" href="./styles/main-css/smallest-screen-main.css" />
+</head>
+
+<body>
+
+    <!-- header starts here -->
+    <header>
+        <div class="desktop-container">
+            <div class="header-container">
+                <a href="#"><img src="./images/logo.png" id="headerlogo" title="TA DIGITAL" alt="company logo"></a>
+            </div>
+
+            <!-- navigation starts here -->
+            <nav>
+                <div class="open-menu"><i class="fa fa-bars"></i></div>
+                <ul class="main-menu">
+                    <div class="close-menu"><i class="fa fa-times"></i></div>
+                    <li class="hide-menu-link" id="menu-profile"><a href="#">Profile</a></li>
+                    <li class="hide-menu-link" id="menu-cart"><a href="#">Go to Cart</a></li>
+                    <li class="hide-menu-link" id="menu-wish"><a href="#">Wishlist</a></li>
+                    <li> <a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>
+            <!-- navigation starts here -->
+            
+            <!-- search section here -->
+            <div class="search-container">
+                <div id="searchbar">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" id="search" name="" placeholder="Search">
+                    </input>
+                </div>
+            </div>
+            <!-- search ends here -->
+            
+            <!-- account related links starts here -->
+            <div class="header-links">
+                <div class="header-link-div">
+                    <span>
+                        <a href="#">
+                            <i class="fa fa-user " aria-hidden="true"></i>
+                            <p>Profile</p>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                            <p>Wishlist</p>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                            <i class="fas fa-suitcase"></i>
+                            <p>Bag</p>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <!-- account related links starts here -->
+
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- main starts here -->
+    <main class="wrapper">
+
+        <!-- about category section starts here -->
+        <section class="category-define">
+            <div class="main-heading">
+                <h1>Mobiles</h1>
+            </div>
+            <p><strong>Mobile phones</strong> are no more merely a part of our lives. Whether it's to stay connected
+                with friends and
+                family or to keep abreast of important developments around the world, mobiles are no longer for sending
+                a text or making a call. From budget to state-of-the-art smartphones; indigenous names to global
+                big-wigs - a whole universe of mobiles await you on Flipkart. Whether you’re looking for waterdrop notch
+                screens, a high screen to body ratio, AI-powered sensational cameras, high storage capacity, blazing
+                quick processing engines or reflective glass designs, rest assured you won’t have to venture anywhere
+                else for your smartphone needs. The information you are reading has been last updated on 24-Sep-21.
+            </p>
+            <p><a href="#">Realme 8 Pro</a> | <a href="#">Realme 8</a> | <a href="#">Realme 8 5G</a> | <a href="#">POCO
+                    X3</a> | <a href="#">POCO X3 Pro</a> | <a href="#">iPhone 11</a> | <a href="#">Realme 7</a> | <a
+                    href="#">Infinix Hot 10</a> | <a href="#">POCO M3</a> | <a href="#">POCO X3 Pro</a> | <a
+                    href="#">Redmi Note 10</a> | <a href="#">Vivo V20</a> | <a href="#">Redmi 9 Power</a>
+            </p>
+        </section>
+        <!-- about category section ends here -->
+
+        <!-- displayed result section starts here -->
+        <section class="result-quant">
+            <div>
+                <h4>Mobiles</h4>
+            </div>
+            <div id="result-stat"></div>
+        </section>
+        <!-- displayed result section ends here -->
+        
+        <!-- sort section ends here -->
+        <section class="sort">
+            <h3>Sort By</h3>
+            <button class="sort-buttons" id="low-to-high">Price-Low to High</button>
+            <button class="sort-buttons" id="high-to-low">Price-High to Low</button>
+            <button class="sort-buttons" id="popular">Popularity</button>
+        </section>
+        <!-- sort section ends here -->
+        
+        <!-- aside filter section starts here -->
+        <aside class="filter">
+
+            <!-- filter heading pannel starts here -->
+            <div class="filter-heading ">
+                <h3 class="filter-heading-hide">Filters<i id="filter-dropdown" class="fas fa-caret-down"></i></h3>
+                <h5>Filters<i id="filter-show" class="fas fa-caret-down"></i></h5>
+                <button id="resetfilter" class="filter-hide" >Reset</button>
+            </div>
+            <!-- filter heading pannel ends here -->
+            
+            <!-- medium-screen sort pannel starts here -->
+            <div class="filter-button-div filter-hide">
+                <button class="filter-buttons" id="sm-low-to-high">Price-Low to High</button>
+                <button class="filter-buttons" id="sm-high-to-low">Price-High to Low</button>
+                <button class="filter-buttons" id="sm-popular">Popularity</button>
+            </div>
+            <!-- medium-screen sort pannel ends here -->
+
+            <!-- filter price pannel starts here -->
+            <div class="filter-price filter-hide">
+                <div class="filter-slider-div">
+                    <h4>Price-Range</h4>
+                    <input type="range" min="0" value="0" id="slider1" />
+                    <div><span id="slider1value"></span> <span id="slider2value"></span></div>
+                    <input type="range" max="70000" value="70000" id="slider2" />
+                </div>
+            </div>
+            <!-- filter price pannel ends here -->
+
+            <!-- filter brand pannel starts here -->
+            <div class="filter-brand filter-hide" id="filterbrand">
+            </div>
+            <div class="filter-discount filter-hide">
+                <h4>Discount</h4>
+                <input type="range" min="0" max="100" value="0" id="discount" />
+                <div id="discountvalue"></div>
+            </div>
+            <!-- filter brand pannel ends here -->
+        </aside>
+        <!-- aside filter section starts here -->
+
+        <section class="category-div" id="categorylist">
+            <p class="novalues">Sorry, no products found !</p>
+        </section>
+        
+        <!-- footer starts here -->
+        <footer>
+            <div>
+                <span> &copy;<small>2020 TA Digital</small></span>
+            </div>
+            <div id="terms">
+                <a href="terms"> Terms of Use</a>
+            </div>
+            <div id="privacy">
+                <a href="privacy"> Privacy Policy</a>
+            </div>
+            <div id="Contacts">
+                <a href="privacy"> Contact Us</a>
+            </div>
+            <div class="footer-icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </footer>
+        <!-- footer ends here -->
+
+    </main>
+    <!-- main ends here -->
+
+    <!-- scripts starts here -->
+    <script type="module" src="./scripts/setup.js"></script>
+    <script type="module" src="./scripts/category.js"></script>
+    <script type="module" src="./scripts/events.js"></script>
+    <!-- scripts starts here -->
+</body>
+
+</html>

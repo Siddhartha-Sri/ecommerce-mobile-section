@@ -1,0 +1,98 @@
+@media screen and (max-width:600px) {
+    header{
+        height:3em;
+    }
+    .main-heading{
+        text-align: center;
+        vertical-align: center;
+        color:#fff;
+        font-size: 4rem;
+        margin-top:0.2em;
+        height: 2em;
+        grid-column:1/1;
+        background-color: rgb(54, 189, 194);
+        text-decoration: underline yellow;
+    }
+    .category-define{
+        width:100%;
+        grid-column: 1/12;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-row: 1/1;
+        padding-bottom:2em ;
+    }
+    .result-quant{
+        width:45%;
+    }
+    .sort{
+        width:100%;
+    }
+    .result-quant{
+        width:90%;
+    }
+    .sort{
+        display:none;
+    }
+    #resetfilter{
+        display:none;
+    }
+    .filter{
+        display:block;
+        flex-direction: column;
+        z-index: 999;
+        background-color: rgb(202, 199, 200);
+        border:none;
+    }
+    .filter-hide{
+        display: none;
+    }
+    #filter-show, .filter h5{
+        display: block;
+    }
+    .filter-heading-hide{
+        display: none;
+    }
+    #filter-dropdown{
+        display: inline-block;
+    }
+    .filter-price, .filter-brand{
+        display: none;
+        background-color: rgb(202, 199, 200);
+    }
+    .filter-price{
+        padding:0.01em;
+    }
+    .filter-discount{
+        display: none;
+        background-color: rgb(202, 199, 200);
+    }
+    .category-div{
+        grid-column: 1/12;
+        grid-template-rows: repeat(12,1fr);
+        border: 1px solid rgb(197, 192, 192);
+    }
+    .category-image{
+        height: 80%;
+        width:100%;
+        grid-column:1/2 ;
+        grid-row:1/2 ;
+    }
+    .category-child-price{
+        grid-column:10/12 ;
+        text-align: left;
+        font-size:0.5em;
+    }
+    .selling-price{
+        font-size:1rem;
+    }
+    .category-child-specs{
+        grid-column:3/9 ;
+        text-align: left;
+        width: 100%;
+    }
+    #addtocart{
+        width:12em;
+        margin-left:-0.3em;
+        text-align: center;
+    }
+}

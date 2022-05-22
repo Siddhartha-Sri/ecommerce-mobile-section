@@ -1,0 +1,229 @@
+
+/* grid starts here */
+.wrapper {
+    height: 90%;
+    margin:0.5em 0.5em;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-column-gap:0.5em;
+    grid-template-rows: 0.2fr 1fr 0.2fr 11fr;
+}
+.category-define{
+    grid-column: 1/12;
+    display: grid;
+    grid-template-rows: 5fr 3fr 2fr;
+    grid-row-gap:0.5em;
+    margin-top: 4em;
+}
+.main-heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#fff;
+    margin-top:0.1em;
+    background-color: rgb(54, 189, 194);
+    text-decoration: underline yellow;
+}
+.category-define p{
+    font-size: 0.95rem;
+}
+.category-define p a{
+    color:rgb(8, 8, 253);
+}
+.novalues{
+    height: 12em;
+    width:100%;
+    margin-top:18%;
+    text-align:center;
+    vertical-align: center;
+    font-size: 1.5rem;
+    display: none;
+}
+.result-quant{
+    grid-column: 2/12;
+    display: flex;
+    align-items: baseline;
+    width:25%;
+    padding:0 0 1%;
+    justify-content: space-between;
+}
+.sort{
+    grid-column: 2/12;
+    display: flex;
+    align-items: baseline;
+    width:50%;
+    justify-content: space-between;
+    padding-bottom: 0.2em;
+}
+.sort button{
+    border:none;
+    font-size: 1rem;
+    background-color: transparent;
+}
+.sort button:hover{
+    color:rgb(6, 6, 253);
+    border-bottom:1px solid rgb(6, 6, 253);
+}
+.filter{
+    grid-row: 2/12;
+    width:100%;
+    grid-template-rows: repeat(12,1fr);
+    text-align: left;
+    background-color: rgb(240, 238, 238);
+    z-index:999999;
+}
+.filter-heading{
+    grid-row: 1/2;
+    width:100%;
+    text-align:center;
+    box-shadow: 0px 9px 11px rgb(212, 206, 206);
+}
+#resetfilter{
+    width:100%;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    font-weight:bold;
+}
+.filter-heading h3{
+    padding:1em;
+}
+.filter-price{
+    width:100%;
+    margin: 2em auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.filter-price h5{
+    text-decoration: underline;
+    font-size: 1rem;
+}
+.filter-slider-div input {
+    width:90%;
+}
+#discount{
+    width:90%;
+}
+.filter-discount{
+    margin-top:1.5em;
+    width:100%;
+    text-align: center;
+}
+.filter-discount h4{
+    text-decoration: underline;
+    display: block;
+}
+.filter-brand {
+    width:100%;
+    margin-top:-1.2em;
+    border-bottom: 1px solid black;
+}
+.filter-brand button{
+   outline:none;
+   border:none;
+    padding:0.2em;
+   font-size:1.2rem;
+   background-color: transparent;
+}
+#filter-show, .filter h5, .filter-button-div{
+    display: none;
+}
+.brand-filter-button{
+    width:100%;
+    border-bottom:0.5px dashed grey;
+}
+.brand-filter-button:hover{
+    color:rgb(39, 39, 233);
+    border-bottom:1px solid rgb(6, 6, 253);
+}
+.category-div{
+    grid-column: 2/12;
+    border: 1px solid rgb(197, 192, 192);
+}
+.category-div a{
+    color:black;
+}
+.category-desc-image{
+    width:100%;
+    background-color: rgb(54, 189, 194);
+    text-align:center;
+}
+.category-child{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    padding-top:2em;
+    margin:0.5em 0.5em auto;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+.category-child:hover{
+    
+    box-shadow: 0px 4px 11px rgb(212, 206, 206);
+}
+.category-child:hover>.category-child-specs h3{
+    color:blue;
+}
+.category-image{
+    height: 80%;
+    width:100%;
+    grid-column:2/4 ;
+    grid-row:1/2 ;
+}
+.category-image img{
+    height:100%;
+}
+#addtocart{
+    margin-top:1em;
+    padding:0.4em 3em;
+    background-color: rgb(9, 196, 253);
+    border-radius: 0.5em;
+    border:1px solid rgb(68, 66, 66);
+    color: #fff;
+    font-weight:bold;
+}
+.category-child-specs{
+    grid-column:5/8 ;
+    text-align: left;
+    width: 100%;
+}
+.category-child li{
+    padding:0.5em;
+    list-style:none;
+}
+ .category-child ul li::before {
+    content : "\2022";
+    padding-right: 10px; 
+    color: rgb(172, 172, 209); 
+}
+.category-child-price{
+    grid-column:9/12 ;
+    text-align: left;
+}
+.selling-price{
+    font-size:2rem;
+}
+.category-child-price del{
+    color:rgb(146, 144, 144);
+    padding:0.3em;
+}
+.price-off{
+    color:rgb(2, 114, 2);
+}
+
+footer{
+    grid-column: 1/12;
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    margin:0.2em auto 0.2em;
+    padding:2em 0 2em;
+    border: 1px solid rgb(197, 192, 192);
+    box-shadow: 0px -2px 5px rgb(212, 206, 206);
+}
+footer a {
+    color:grey;
+}
+footer i{
+    padding-right:1em;
+}
+#filter-dropdown{
+    display: none;
+}

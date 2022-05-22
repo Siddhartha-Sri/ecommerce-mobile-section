@@ -1,0 +1,72 @@
+@media screen and (max-width:1000px){
+    header{
+        height:1;
+    }
+    .open-menu{
+        display: block;
+        position: relative;
+        right: -2em;
+        bottom:0.4em;
+        grid-column:3/3;
+    }
+    .main-menu{
+        display: flex;
+        height:100vh;
+        flex-direction: column;
+        position:fixed;
+        top:0;
+        right:0;
+        z-index: 10;
+        background-color: rgb(250, 248, 248);
+        justify-content: center;
+        align-items: left;
+        opacity: 1;
+        transition:top 1sec ease;
+        display:none;
+        overflow-Y:scroll;
+    }
+    .main-menu a{
+        color:black;
+    }
+    .close-menu{
+        display:none;
+        position:absolute;
+        right: 1em;
+        top:1em;
+    }
+    .hide-menu-link,.close-menu{
+        display:block;
+    }
+    .main-menu li{
+        padding:3em;
+        margin-right:1em;
+        margin-bottom: 1vh;
+    }
+    .main-menu a:hover {
+        color:rgb(228, 49, 49);
+    }
+    .header-links{
+        display: none;
+    }
+    .desktop-container{
+        width:95%;
+        margin: auto;
+        display:grid;
+        grid-template-columns: 2fr 5fr 1fr;
+    } 
+    #headerlogo{
+        height:2em;
+        
+    }  
+    header{
+        height: 5%;
+        box-shadow: 0px 5px 15px rgb(212, 206, 206);
+    }
+    #searchbar{
+        width:80%;
+        background-color: transparent;
+    }
+    .search-container{
+        grid-column: 2/3;
+    }
+}
